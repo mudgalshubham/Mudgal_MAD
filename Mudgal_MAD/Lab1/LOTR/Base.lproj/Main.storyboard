@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LOTR" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lord of the Rings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4YX-0h-M6s">
+                                <rect key="frame" x="161" y="45" width="277" height="45"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="2zl-Nw-8Z5" userLabel="Stack1">
+                                <rect key="frame" x="38" y="120" width="524" height="292"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="1Ya-aD-DLU" userLabel="Stack2">
+                                        <rect key="frame" x="0.0" y="0.0" width="524" height="192"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="FlS-dr-zaT" userLabel="Stack3.1">
+                                                <rect key="frame" x="0.0" y="0.0" width="70" height="192"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IpF-EC-QIA">
+                                                        <rect key="frame" x="0.0" y="0.0" width="70" height="64"/>
+                                                        <state key="normal" title="Gandalf"/>
+                                                        <connections>
+                                                            <action selector="characterSelect:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bhh-sc-J27"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9h5-Be-s4L">
+                                                        <rect key="frame" x="0.0" y="64" width="70" height="64"/>
+                                                        <state key="normal" title="Aragorn"/>
+                                                        <connections>
+                                                            <action selector="characterSelect:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ik5-ZL-YKj"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cu0-NF-fIR">
+                                                        <rect key="frame" x="0.0" y="128" width="70" height="64"/>
+                                                        <state key="normal" title="Frodo"/>
+                                                        <connections>
+                                                            <action selector="characterSelect:" destination="BYZ-38-t0r" eventType="touchUpInside" id="26u-EA-WSa"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="9h5-Be-s4L" firstAttribute="width" secondItem="IpF-EC-QIA" secondAttribute="width" id="fK9-rM-4s0"/>
+                                                    <constraint firstItem="Cu0-NF-fIR" firstAttribute="width" secondItem="9h5-Be-s4L" secondAttribute="width" id="h6c-tO-eKZ"/>
+                                                    <constraint firstItem="9h5-Be-s4L" firstAttribute="height" secondItem="IpF-EC-QIA" secondAttribute="height" id="u9I-b5-yKk"/>
+                                                    <constraint firstItem="Cu0-NF-fIR" firstAttribute="height" secondItem="9h5-Be-s4L" secondAttribute="height" id="yqZ-Ew-qB4"/>
+                                                </constraints>
+                                            </stackView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="252" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" image="lotr" translatesAutoresizingMaskIntoConstraints="NO" id="gXB-im-PeM">
+                                                <rect key="frame" x="70" y="0.0" width="384" height="192"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="gXB-im-PeM" secondAttribute="height" multiplier="40:20" id="BlU-Nw-RAZ"/>
+                                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="400" id="p3P-ln-aRw"/>
+                                                </constraints>
+                                            </imageView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="M2R-Ds-G6E" userLabel="Stack3.2">
+                                                <rect key="frame" x="454" y="0.0" width="70" height="192"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KXe-N5-ztN">
+                                                        <rect key="frame" x="0.0" y="0.0" width="70" height="64"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="70" id="vGq-2c-DHn"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Samwise"/>
+                                                        <connections>
+                                                            <action selector="characterSelect:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WXi-js-L2X"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xK0-2C-dAf">
+                                                        <rect key="frame" x="0.0" y="64" width="70" height="64"/>
+                                                        <state key="normal" title="Arwin"/>
+                                                        <connections>
+                                                            <action selector="characterSelect:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NZd-cX-lwD"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UTY-Jh-7Qp">
+                                                        <rect key="frame" x="0.0" y="128" width="70" height="64"/>
+                                                        <state key="normal" title="Legolas"/>
+                                                        <connections>
+                                                            <action selector="characterSelect:" destination="BYZ-38-t0r" eventType="touchUpInside" id="E1f-09-LX3"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="xK0-2C-dAf" firstAttribute="height" secondItem="KXe-N5-ztN" secondAttribute="height" id="0fQ-lV-kcY"/>
+                                                    <constraint firstItem="xK0-2C-dAf" firstAttribute="width" secondItem="KXe-N5-ztN" secondAttribute="width" id="0ni-O3-cwj"/>
+                                                    <constraint firstItem="UTY-Jh-7Qp" firstAttribute="height" secondItem="xK0-2C-dAf" secondAttribute="height" id="e9e-wO-8S4"/>
+                                                    <constraint firstItem="UTY-Jh-7Qp" firstAttribute="width" secondItem="xK0-2C-dAf" secondAttribute="width" id="nUd-k9-AcQ"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="FlS-dr-zaT" firstAttribute="centerY" secondItem="1Ya-aD-DLU" secondAttribute="centerY" id="FwA-Ut-loJ"/>
+                                            <constraint firstItem="M2R-Ds-G6E" firstAttribute="centerY" secondItem="1Ya-aD-DLU" secondAttribute="centerY" id="P2j-Fa-6ef"/>
+                                            <constraint firstItem="KXe-N5-ztN" firstAttribute="width" secondItem="Cu0-NF-fIR" secondAttribute="width" id="hmW-aL-Erj"/>
+                                            <constraint firstItem="M2R-Ds-G6E" firstAttribute="width" secondItem="FlS-dr-zaT" secondAttribute="width" id="nsv-Lp-1Pi"/>
+                                        </constraints>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cy2-g9-fFU" userLabel="Infobox">
+                                        <rect key="frame" x="0.0" y="192" width="524" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="100" id="uCo-pc-KPQ"/>
+                                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="1000" id="vB0-cp-dqh"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Cy2-g9-fFU" firstAttribute="width" secondItem="1Ya-aD-DLU" secondAttribute="width" id="EhE-zE-1wL"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="4YX-0h-M6s" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0xt-3M-p4i"/>
+                            <constraint firstItem="2zl-Nw-8Z5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Rpn-O2-43o"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" relation="greaterThanOrEqual" secondItem="2zl-Nw-8Z5" secondAttribute="bottom" constant="20" id="a0n-jG-60r"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2zl-Nw-8Z5" secondAttribute="trailing" constant="18" id="e00-Iy-yTb"/>
+                            <constraint firstItem="2zl-Nw-8Z5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="18" id="eUk-7T-rr7"/>
+                            <constraint firstItem="FlS-dr-zaT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="18" id="kZb-qa-au7"/>
+                            <constraint firstItem="4YX-0h-M6s" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="25" id="spS-bT-FZ1"/>
+                            <constraint firstItem="2zl-Nw-8Z5" firstAttribute="top" secondItem="4YX-0h-M6s" secondAttribute="bottom" constant="30" id="t1A-0K-KSV"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="M2R-Ds-G6E" secondAttribute="trailing" constant="18" id="uof-uq-fLy"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="Characters" destination="gXB-im-PeM" id="a6n-Mn-evq"/>
+                        <outlet property="InfoText" destination="Cy2-g9-fFU" id="bGa-8h-tUa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="189" y="170"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="lotr" width="1280" height="720"/>
+    </resources>
+</document>
