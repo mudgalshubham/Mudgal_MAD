@@ -33,10 +33,10 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     
     func updateMilesAndCalories(){
-        var miles: Float
-        var speed: Float
-        var caloriesSpeed:Float
-        var calories:Float
+        var miles: Float = 0.00
+        var speed: Float = 0.00
+        var caloriesSpeed:Float = 0.00
+        var calories:Float = 0.00
 
         if(!workoutTimeLabel.text!.isEmpty){
             let time = Float(workoutTimeLabel.text!)!
@@ -75,8 +75,12 @@ class ViewController: UIViewController, UITextFieldDelegate {
                 miles = miles * 5
                 calories = calories * 5
             }
-            milesRun.text = String(miles)
-            caloriesBurned.text = String(calories)
+            
+            let milesStr = String(format: "%.2f", miles)
+            let calStr = String(format: "%.2f", calories)
+            
+            milesRun.text = milesStr + " miles"
+            caloriesBurned.text = calStr + " calories"
         }
     }
 
