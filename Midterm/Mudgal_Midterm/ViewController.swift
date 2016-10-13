@@ -40,7 +40,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
 
         if(!workoutTimeLabel.text!.isEmpty){
             let time = Float(workoutTimeLabel.text!)!
-            if(time < 10){
+            if(time < 30){
                 let alert = UIAlertController(title: "Alert", message:"Workout time is less than 10 minutes", preferredStyle: UIAlertControllerStyle.Alert)
                     
 
