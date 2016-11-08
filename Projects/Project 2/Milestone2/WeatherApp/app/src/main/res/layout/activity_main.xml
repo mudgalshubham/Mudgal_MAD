@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/myColor"
+    tools:context="com.example.sunnyboy.weatherapp.MainActivity">
+
+    <TextView
+        android:text="@string/cityString"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:id="@+id/cityTextView" />
+
+    <TextView
+        android:text="@string/zipcodeString"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/zipcodeTextView"
+        android:layout_alignBaseline="@+id/zipcodeEditText"
+        android:layout_alignBottom="@+id/zipcodeEditText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:hint="zipcode"
+        android:imeOptions="actionDone"
+        android:id="@+id/zipcodeEditText"
+        android:layout_below="@+id/cityEditText"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="18dp"
+        android:layout_marginEnd="18dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="city"
+        android:imeOptions="actionDone"
+        android:ems="10"
+        android:id="@+id/cityEditText"
+        android:layout_alignBottom="@+id/cityTextView"
+        android:layout_alignLeft="@+id/zipcodeEditText"
+        android:layout_alignStart="@+id/zipcodeEditText" />
+
+    <Button
+        android:text="@string/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="51dp"
+        android:onClick="getWeather"
+        android:id="@+id/button"
+        android:layout_below="@+id/zipcodeEditText"
+        android:layout_toRightOf="@+id/zipcodeTextView"
+        android:layout_toEndOf="@+id/zipcodeTextView" />
+
+    <TextView
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="94dp"
+        android:id="@+id/tempTextView" />
+
+    <TextView
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tempTextView"
+        android:layout_alignLeft="@+id/zipcodeEditText"
+        android:layout_alignStart="@+id/zipcodeEditText"
+        android:layout_marginBottom="40dp"
+        android:id="@+id/descriptionValueTextView" />
+<!-- -->
+
+    <!--     android:layout_alignRight="@+id/descriptionValueTextView"
+    -->
+
+ <TextView
+     android:text=""
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_below="@+id/tempValueTextView"
+     android:layout_alignLeft="@+id/tempTextView"
+     android:layout_alignStart="@+id/tempTextView"
+     android:layout_marginTop="29dp"
+     android:id="@+id/humidityTextView" />
+
+ <TextView
+     android:text=""
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_alignBottom="@+id/humidityTextView"
+     android:layout_alignLeft="@+id/tempValueTextView"
+     android:layout_alignStart="@+id/tempValueTextView"
+     android:id="@+id/humidityValuetextView" />
+
+ <TextView
+     android:text=""
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_alignParentBottom="true"
+     android:layout_alignRight="@+id/humidityTextView"
+     android:layout_alignEnd="@+id/humidityTextView"
+     android:layout_marginBottom="11dp"
+     android:id="@+id/windTextView" />
+
+ <TextView
+     android:text=""
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:id="@+id/windValueTextView"
+     android:layout_alignBaseline="@+id/windTextView"
+     android:layout_alignBottom="@+id/windTextView"
+     android:layout_alignLeft="@+id/humidityValuetextView"
+     android:layout_alignStart="@+id/humidityValuetextView" />
+
+    <TextView
+        android:text=""
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        android:id="@+id/tempValueTextView"
+        android:layout_below="@+id/descriptionValueTextView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>

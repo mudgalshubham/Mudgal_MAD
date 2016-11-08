@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">WeatherApp</string>
+    <string name="cityString">Enter City</string>
+    <string name="zipcodeString">Enter Zipcode</string>
+    <string name="button">Enter</string>
+    <string name="countryTextview">Enter Country</string>
+</resources>
