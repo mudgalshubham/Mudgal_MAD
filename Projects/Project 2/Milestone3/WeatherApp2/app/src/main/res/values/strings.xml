@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">How\'s the Weather</string>
+    <string name="cityString">Enter City</string>
+    <string name="zipcodeString">Enter Zipcode</string>
+    <string name="button">Enter</string>
+    <string name="countryTextview">Enter Country</string>
+
+    <string name="toFehrenheit">To Fehrenheit</string>
+    <string name="toCelcius">To Celcius</string>
+    <string name="temperatureUnit">ToggleTemperature</string>
+    <string name="description">Description</string>
+    <string name="temp">Temp</string>
+    <string name="humidity">Humidity</string>
+    <string name="wind">Wind</string>
+    <string name="location">Location</string>
+
+    <color name="textColor">#FDFEFE</color>
+    <color name="textColor2">#273746</color>
+
+    <color name="editTextColor">#273746</color>
+
+
+</resources>
