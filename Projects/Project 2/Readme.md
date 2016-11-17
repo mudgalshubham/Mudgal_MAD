@@ -1,5 +1,7 @@
 Readme:
 
-The app currently takes in either the (city name) or the (zip code) of a location and returns only the current temperature of the given location.
+--What's the Weather--
 
-Since data is retrieved from the openweather api, number of other features about the weather will be shown for future milestones. Also UI will be improved for better view.
+The app takes in either the (city name) or the (zip code - preference given to zip code if both city and zip code are entered) of a location and returns the current temperature, humidity level, wind speed and a description of the weather for the given location. Temperature can be converted between fehrenheit and celcius for user's convenience.
+
+Since data is retrieved from the openweather api and it's an open API, some times the data may not be retrieved due to bad connection. Please try again if similar situation occurs.
