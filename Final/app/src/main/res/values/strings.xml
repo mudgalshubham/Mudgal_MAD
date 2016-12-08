@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Ice Cream_ Shubham Final</string>
+    <string name="dairy_free">Dairy-free</string>
+
+    <string-array name="flavors">
+        <item> Death by Chocolate </item>
+        <item> Cookies and Cream </item>
+        <item> Salted Caramel </item>
+    </string-array>
+
+    <string name="toggle_on">Cup</string>
+    <string name="toggle_off">Cone</string>
+    <string name="find_treatButton">Find Treat</string>
+    <string name="treat_meButton">Treat Me</string>
+    <string name="nuts">Nuts</string>
+    <string name="hot_fudge">Hot Fudge</string>
+    <string name="sprinkles">Sprinkles</string>
+    <string name="gelatoRadio">Gelato</string>
+    <string name="frozen_yogurtRadio">Frozen Yogurt</string>
+    <string name="ice_creamRadio">Ice Cream</string>
+    <string name="i_scream_for_ice_cream">I Scream for Ice-Cream</string>
+    <string name="suggestion_textview">This is your suggested Ice cream shop</string>
+</resources>
