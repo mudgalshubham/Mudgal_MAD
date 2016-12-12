@@ -1,0 +1,7 @@
+#Mon Dec 12 11:52:21 MST 2016
+base.0=/Users/SunnyBoy/Documents/AndroidStudioProjects/MediaPlayer - Grid/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_ecacacfb35baab3eb956cf3e1edc72b51186ed7c
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=/Users/SunnyBoy/Documents/AndroidStudioProjects/MediaPlayer - Grid/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_a796e7e17b58c17760a85190b0018cccb2acc26b/classes.dex
+base.1=/Users/SunnyBoy/Documents/AndroidStudioProjects/MediaPlayer - Grid/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_a796e7e17b58c17760a85190b0018cccb2acc26b
+file.0=/Users/SunnyBoy/Documents/AndroidStudioProjects/MediaPlayer - Grid/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_ecacacfb35baab3eb956cf3e1edc72b51186ed7c/classes.dex
